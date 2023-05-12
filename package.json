@@ -1,6 +1,6 @@
 {
   "name": "@vandeurenglenn/flex-elements",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "exports": {
     ".": {
@@ -39,7 +39,6 @@
       "import": "./exports/wrap-evenly.js",
       "types": "./exports/types/wrap-evenly.d.ts"
     }
-    
   },
   "files": [
     "exports"
