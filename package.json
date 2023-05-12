@@ -7,18 +7,39 @@
       "import": "./exports/elements.js",
       "types": "./exports/types/elements.d.ts"
     },
-    "./container": {
+    "./container.js": {
       "import": "./exports/container.js",
       "types": "./exports/types/container.d.ts"
     },
-    "./it": {
+    "./display.js": {
+      "import": "./exports/display.js",
+      "types": "./exports/types/display.d.ts"
+    },
+    "./it.js": {
       "import": "./exports/it.js",
       "types": "./exports/types/it.d.ts"
     },
-    "./column": {
+    "./column.js": {
       "import": "./exports/column.js",
       "types": "./exports/types/column.d.ts"
+    },
+    "./row.js": {
+      "import": "./exports/row.js",
+      "types": "./exports/types/row.d.ts"
+    },
+    "./wrap-around.js": {
+      "import": "./exports/wrap-around.js",
+      "types": "./exports/types/wrap-around.d.ts"
+    },
+    "./wrap-between.js": {
+      "import": "./exports/wrap-between.js",
+      "types": "./exports/types/wrap-between.d.ts"
+    },
+    "./wrap-evenly.js": {
+      "import": "./exports/wrap-evenly.js",
+      "types": "./exports/types/wrap-evenly.d.ts"
     }
+    
   },
   "files": [
     "exports"
