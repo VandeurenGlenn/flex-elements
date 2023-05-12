@@ -3,11 +3,30 @@
   "version": "0.1.1",
   "description": "",
   "exports": {
-    ".": "./src/flex-elements.js"
+    ".": {
+      "import": "./exports/elements.js",
+      "types": "./exports/types/elements.d.ts"
+    },
+    "./container": {
+      "import": "./exports/container.js",
+      "types": "./exports/types/container.d.ts"
+    },
+    "./it": {
+      "import": "./exports/it.js",
+      "types": "./exports/types/it.d.ts"
+    },
+    "./column": {
+      "import": "./exports/column.js",
+      "types": "./exports/types/column.d.ts"
+    }
   },
+  "files": [
+    "exports"
+  ],
   "type": "module",
   "scripts": {
-    "c": "rollup -c",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,5 +39,13 @@
   "bugs": {
     "url": "https://github.com/VandeurenGlenn/flex-elements/issues"
   },
-  "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme"
+  "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "rollup": "^3.21.5",
+    "tslib": "^2.5.0"
+  },
+  "dependencies": {
+    "lit": "^2.7.4"
+  }
 }

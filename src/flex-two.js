@@ -1,16 +1,11 @@
-export default customElements.define('flex-two', class FlexTwo extends HTMLElement {
+import { FlexIt } from './it.js'
+
+export class FlexTwo extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({mode: 'open'})
-    this.shadowRoot.innerHTML = this.template
+    this.flex = 2
+    console.warn('<flex-two> deprecated, use <flex-it flex="2"> instead');
   }
-  get template() {
-    return `<style>
-      :host {
-        flex: 2;
-      }
-    </style>
-    
-    <slot></slot>`
-  }
-});
+}
+
+customElements.define('flex-two', FlexTwo);

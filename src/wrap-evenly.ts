@@ -1,4 +1,4 @@
-export default customElements.define('flex-wrap-evenly', class FlexWrapEvenly extends HTMLElement {
+export class FlexWrapEvenly extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({mode: 'open'})
@@ -15,4 +15,5 @@ export default customElements.define('flex-wrap-evenly', class FlexWrapEvenly ex
     <slot></slot>
     `
   }
-});
+}
+customElements.define('flex-wrap-evenly', FlexWrapEvenly);

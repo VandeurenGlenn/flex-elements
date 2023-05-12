@@ -1,16 +1,11 @@
-export default customElements.define('flex-one', class FlexOne extends HTMLElement {
+import { FlexIt } from './it.js'
+
+export class FlexOne extends FlexIt {
   constructor() {
     super();
-    this.attachShadow({mode: 'open'})
-    this.shadowRoot.innerHTML = this.template
+    this.flex = 1
+    console.warn('<flex-one> deprecated, use <flex-it flex="1"> instead');
   }
-  get template() {
-    return `<style>
-      :host {
-        flex: 1;
-      }
-    </style>
-    
-    <slot></slot>`
-  }
-});
+}
+
+customElements.define('flex-one', FlexOne)

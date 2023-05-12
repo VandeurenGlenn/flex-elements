@@ -1,16 +1,8 @@
-export default customElements.define('flex-three', class FlexThree extends HTMLElement {
+export class FlexThree extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({mode: 'open'})
-    this.shadowRoot.innerHTML = this.template
+    this.flex = 3
+    console.warn('<flex-three> deprecated, use <flex-it flex="3"> instead');
   }
-  get template() {
-    return `<style>
-      :host {
-        flex: 3;
-      }
-    </style>
-    
-    <slot></slot>`
-  }
-});
+}
+customElements.define('flex-three', FlexThree);

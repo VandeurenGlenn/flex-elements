@@ -1,16 +1,9 @@
-export default customElements.define('flex-four', class FlexFour extends HTMLElement {
+import { FlexIt } from './it.js'
+
+export default customElements.define('flex-four', class FlexFour extends FlexIt {
   constructor() {
     super();
-    this.attachShadow({mode: 'open'})
-    this.shadowRoot.innerHTML = this.template
-  }
-  get template() {
-    return `<style>
-      :host {
-        flex: 4;
-      }
-    </style>
-    
-    <slot></slot>`
+    this.flex = 4
+    console.warn('<flex-four> deprecated, use <flex-it flex="4"> instead');
   }
 });

@@ -1,4 +1,4 @@
-export default customElements.define('flex-wrap-around', class FlexWrapAround extends HTMLElement {
+export class FlexWrapAround extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({mode: 'open'})
@@ -15,4 +15,5 @@ export default customElements.define('flex-wrap-around', class FlexWrapAround ex
     <slot></slot>
     `
   }
-});
+}
+customElements.define('flex-wrap-around', FlexWrapAround);

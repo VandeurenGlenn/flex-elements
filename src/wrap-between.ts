@@ -1,4 +1,4 @@
-export default customElements.define('flex-column', class FlexColumn extends HTMLElement {
+export class FlexWrapBetween extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({mode: 'open'})
@@ -8,10 +8,12 @@ export default customElements.define('flex-column', class FlexColumn extends HTM
     return `<style>
       :host {
         display: flex;
-        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: space-between;
       }      
     </style>
     <slot></slot>
     `
   }
-});
+}
+customElements.define('flex-wrap-between', FlexWrapBetween);
