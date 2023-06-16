@@ -35,6 +35,10 @@
       "import": "./exports/wrap-between.js",
       "types": "./exports/types/wrap-between.d.ts"
     },
+    "./wrap-center.js": {
+      "import": "./exports/wrap-center.js",
+      "types": "./exports/types/wrap-center.d.ts"
+    },
     "./wrap-evenly.js": {
       "import": "./exports/wrap-evenly.js",
       "types": "./exports/types/wrap-evenly.d.ts"
