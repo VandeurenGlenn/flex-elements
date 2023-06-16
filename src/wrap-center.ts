@@ -1,11 +1,12 @@
+import { html } from "lit";
 import { FlexDisplay } from "./display.js";
 
 export class FlexWrapCenter extends FlexDisplay {
   constructor() {
     super();
   }
-  get template() {
-    return `<style>
+  render() {
+    return html`<style>
       :host {
         display: flex;
         flex-flow: row wrap;
