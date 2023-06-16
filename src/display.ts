@@ -30,8 +30,20 @@ import { property } from "lit/decorators.js";
   @property({type: String})
   width: string = '100%'
 
-  @property({type: String})
+  @property({type: String, reflect: true})
   direction: string = 'row'
+
+  @property({type: Boolean, reflect: true})
+  center: boolean
+
+  @property({type: Boolean, reflect: true, attribute: 'center-center'})
+  centerCenter: boolean
+
+  @property({type: String})
+  justifyContent: string = 'flex-start'
+
+  @property({type: String})
+  alignItems: string = 'flex-start'
 
   render() {
     return html`
@@ -42,6 +54,17 @@ import { property } from "lit/decorators.js";
         min-width: var(--flex-display-min-width, ${this.minWidth});
         width: var(--flex-display-width, ${this.width});
         flex-direction: var(--flex-display-direction, ${this.direction});
+        justify-content: var(--flex-display-justify-content, ${this.justifyContent});
+        align-items: var(--flex-display-align-items, ${this.alignItems})
+      }
+
+      :host([center]) {
+        align-items: center;
+      }
+
+      :host([center-center]) {
+        align-items: center;
+        justify-content: center
       }
     </style>
     <slot></slot>
