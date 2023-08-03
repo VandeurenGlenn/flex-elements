@@ -1,4 +1,4 @@
-import { html } from "lit";
+import { CSSResultGroup, css, html } from "lit";
 import { property } from "lit/decorators.js";
 import { FlexDisplay } from "./display.js";
 
@@ -22,31 +22,13 @@ import { FlexDisplay } from "./display.js";
  * `--flex-display-padding` (12px)
  */
 export class FlexContainer extends FlexDisplay {
-  @property({ type: String })
-  padding: string = '12px'
-
   constructor() {
     super();
     this.maxWidth = '640px'
     this.minWidth = '320px'
     this.width = '100%'
     this.direction = 'column'
-  }
-
-  render() {
-    return html`
-    <style>
-      :host {
-        display: flex;
-        max-width: var(--flex-display-max-width, ${this.maxWidth});
-        min-width: var(--flex-display-min-width, ${this.minWidth});
-        width: var(--flex-display-width, ${this.width});
-        padding: var(--flex-display-padding, ${this.padding});
-        flex-direction: var(--flex-display-direction, ${this.direction});
-      }
-    </style>
-    <slot></slot>
-    `
+    this.padding = '12px'
   }
 }
 
