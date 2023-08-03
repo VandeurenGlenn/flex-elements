@@ -1,4 +1,4 @@
-import { LitElement, html, css, CSSResultGroup } from "lit";
+import { LitElement, html } from "lit";
 import { property } from "lit/decorators.js";
 
 /**
@@ -19,8 +19,19 @@ import { property } from "lit/decorators.js";
  * `--flex-display-min-width` (auto)
  * 
  * `--flex-display-width` (100%)
+ * 
+ * `--flex-display-padding` (0)
+ * 
+ * `--flex-display-align-items` (flex-start)
+ * 
+ * `--flex-display-justify-content` (flex-start)
+ * 
+ * `--flex-display-box-sizing` (border-box)
  */
  export class FlexDisplay extends LitElement {
+  @property({ type: String })
+  padding: string = '0'
+
   @property({type: String})
   minWidth: string = 'auto'
 
@@ -31,7 +42,7 @@ import { property } from "lit/decorators.js";
   width: string = '100%'
 
   @property({type: String, reflect: true})
-  direction: string = 'row'
+  direction: 'row' | 'row-reverse' | 'column' | 'column-reverse' = 'row'
 
   @property({type: Boolean, reflect: true})
   center: boolean
@@ -45,17 +56,22 @@ import { property } from "lit/decorators.js";
   @property({type: String})
   alignItems: string = 'flex-start'
 
+  @property({type: String})
+  boxSizing: 'border-box' | 'content-box' = 'border-box'
+  
   render() {
     return html`
     <style>
       :host {
         display: flex;
+        box-sizing: var(--flex-display-box-sizing, ${this.boxSizing});
         max-width: var(--flex-display-max-width, ${this.maxWidth});
         min-width: var(--flex-display-min-width, ${this.minWidth});
         width: var(--flex-display-width, ${this.width});
         flex-direction: var(--flex-display-direction, ${this.direction});
         justify-content: var(--flex-display-justify-content, ${this.justifyContent});
-        align-items: var(--flex-display-align-items, ${this.alignItems})
+        align-items: var(--flex-display-align-items, ${this.alignItems});
+        padding: var(--flex-display-padding, ${this.padding});
       }
 
       :host([center]) {
