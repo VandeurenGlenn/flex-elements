@@ -69,10 +69,15 @@ export class FlexIt extends HTMLElement {
   get template() {
     return `<style>
       :host {
+        --flex-it-pointer-events: none;
+        --flex-it-user-select: none;
+
         flex: var(--flex-it-flex, ${this.flex});
         max-width: var(--flex-it-max-width, ${this.maxWidth});
         min-width: var(--flex-it-min-width, ${this.minWidth});
         width: var(--flex-it-width, ${this.width});
+        pointer-events: var(--flex-it-pointer-events);
+        user-select: var(--flex-it-user-select);
       }
     </style>
     <slot></slot>
