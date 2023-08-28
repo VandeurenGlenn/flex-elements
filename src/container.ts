@@ -1,5 +1,3 @@
-import { CSSResultGroup, css, html } from "lit";
-import { property } from "lit/decorators.js";
 import { FlexDisplay } from "./display.js";
 
 /**

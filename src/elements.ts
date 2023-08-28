@@ -1,9 +1,3 @@
-
-import './flex-one.js'
-import './flex-two.js'
-import './flex-three.js'
-import './flex-four.js'
-
 import { FlexContainer } from './container.js'
 import { FlexColumn } from './column.js'
 import { FlexRow } from './row.js'
