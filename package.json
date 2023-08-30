@@ -49,8 +49,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "watch": "rollup -c -w",
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -64,12 +63,10 @@
     "url": "https://github.com/VandeurenGlenn/flex-elements/issues"
   },
   "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme",
-  "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.0",
-    "rollup": "^3.21.5",
-    "tslib": "^2.5.0"
-  },
   "dependencies": {
     "lit": "^2.7.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
