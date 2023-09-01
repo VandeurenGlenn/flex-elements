@@ -7,7 +7,7 @@
     "experimentalDecorators": true,
     "declaration": true,
     "declarationDir": "exports/types",
-    "useDefineForClassFields": true
+    "useDefineForClassFields": false
   },
   "include": [
     "./src/**/*"
