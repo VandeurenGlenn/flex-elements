@@ -1,3 +1,9 @@
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-it': FlexIt;
+  }
+}
+
 /**
  * @module `@vandeurenglenn/flex-elements/it.js`
  * @class FlexIt

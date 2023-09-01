@@ -1,3 +1,9 @@
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-wrap-evenly': FlexWrapEvenly;
+  }
+}
+
 export class FlexWrapEvenly extends HTMLElement {
   constructor() {
     super();

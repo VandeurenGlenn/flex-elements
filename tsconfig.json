@@ -5,7 +5,9 @@
     "moduleResolution": "NodeNext",
     "outDir": "./exports",
     "experimentalDecorators": true,
-    "useDefineForClassFields": false
+    "declaration": true,
+    "declarationDir": "exports/types",
+    "useDefineForClassFields": true
   },
   "include": [
     "./src/**/*"

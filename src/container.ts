@@ -1,4 +1,10 @@
-import { FlexDisplay } from "./display.js";
+import { FlexDisplay } from "./internal/display.js";
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-container': FlexContainer;
+  }
+}
 
 /**
  * @module `@vandeurenglenn/flex-elements/container.js`

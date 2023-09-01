@@ -1,5 +1,11 @@
 import { CSSResultGroup, css, html } from "lit";
-import { FlexDisplay } from "./display.js";
+import { FlexDisplay } from "./internal/display.js";
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-wrap-center': FlexWrapCenter;
+  }
+}
 
 export class FlexWrapCenter extends FlexDisplay {
   constructor() {

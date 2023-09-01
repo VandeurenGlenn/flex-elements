@@ -1,3 +1,9 @@
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-wrap-around': FlexWrapAround;
+  }
+}
+
 export class FlexWrapAround extends HTMLElement {
   constructor() {
     super();

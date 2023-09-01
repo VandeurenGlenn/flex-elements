@@ -1,3 +1,9 @@
+declare global {
+  interface HTMLElementTagNameMap {
+    'flex-wrap-between': FlexWrapBetween;
+  }
+}
+
 export class FlexWrapBetween extends HTMLElement {
   constructor() {
     super();

@@ -3,10 +3,6 @@
   "version": "1.0.3",
   "description": "",
   "exports": {
-    ".": {
-      "import": "./exports/elements.js",
-      "types": "./exports/types/elements.d.ts"
-    },
     "./container.js": {
       "import": "./exports/container.js",
       "types": "./exports/types/container.d.ts"
