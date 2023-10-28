@@ -3,8 +3,7 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "outDir": "./types",
-    "emitDeclarationOnly": true,
+    "outDir": "./exports",
     "experimentalDecorators": true,
     "declaration": true,
     "useDefineForClassFields": false
