@@ -3,14 +3,17 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "outDir": "./exports",
+    "outDir": "./types",
+    "emitDeclarationOnly": true,
     "experimentalDecorators": true,
     "declaration": true,
-    "declarationDir": "exports/types",
     "useDefineForClassFields": false
   },
   "include": [
-    "./src/**/*"
+    "./lib/**/*"
+  ],
+  "exclude": [
+    "@types/node"
   ]
   
 }

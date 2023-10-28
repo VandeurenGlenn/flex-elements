@@ -4,44 +4,45 @@
   "description": "",
   "exports": {
     "./container.js": {
-      "import": "./exports/container.js",
-      "types": "./exports/types/container.d.ts"
+      "import": "./lib/container.ts",
+      "types": "./types/container.d.ts"
     },
     "./display.js": {
-      "import": "./exports/display.js",
-      "types": "./exports/types/display.d.ts"
+      "import": "./lib/display.ts",
+      "types": "./types/display.d.ts"
     },
     "./it.js": {
-      "import": "./exports/it.js",
-      "types": "./exports/types/it.d.ts"
+      "import": "./lib/it.ts",
+      "types": "./types/it.d.ts"
     },
     "./column.js": {
-      "import": "./exports/column.js",
-      "types": "./exports/types/column.d.ts"
+      "import": "./lib/column.ts",
+      "types": "./types/column.d.ts"
     },
     "./row.js": {
-      "import": "./exports/row.js",
-      "types": "./exports/types/row.d.ts"
+      "import": "./lib/row.ts",
+      "types": "./types/row.d.ts"
     },
     "./wrap-around.js": {
-      "import": "./exports/wrap-around.js",
-      "types": "./exports/types/wrap-around.d.ts"
+      "import": "./lib/wrap-around.ts",
+      "types": "./types/wrap-around.d.ts"
     },
     "./wrap-between.js": {
-      "import": "./exports/wrap-between.js",
-      "types": "./exports/types/wrap-between.d.ts"
+      "import": "./lib/wrap-between.ts",
+      "types": "./types/wrap-between.d.ts"
     },
     "./wrap-center.js": {
-      "import": "./exports/wrap-center.js",
-      "types": "./exports/types/wrap-center.d.ts"
+      "import": "./lib/wrap-center.ts",
+      "types": "./types/wrap-center.d.ts"
     },
     "./wrap-evenly.js": {
-      "import": "./exports/wrap-evenly.js",
-      "types": "./exports/types/wrap-evenly.d.ts"
+      "import": "./lib/wrap-evenly.ts",
+      "types": "./types/wrap-evenly.d.ts"
     }
   },
   "files": [
-    "exports"
+    "exports",
+    "types"
   ],
   "type": "module",
   "scripts": {
@@ -60,7 +61,7 @@
   },
   "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme",
   "dependencies": {
-    "lit": "^2.8.0"
+    "lit": "^3.0.1"
   },
   "devDependencies": {
     "typescript": "^5.2.2"
