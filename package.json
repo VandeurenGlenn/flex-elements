@@ -41,7 +41,7 @@
     }
   },
   "files": [
-    "exports",
+    "lib",
     "types"
   ],
   "type": "module",
