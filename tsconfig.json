@@ -4,15 +4,8 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./exports",
-    "experimentalDecorators": true,
-    "declaration": true,
-    "useDefineForClassFields": false
+    "declaration": true
   },
-  "include": [
-    "./lib/**/*"
-  ],
-  "exclude": [
-    "@types/node"
-  ]
-  
+  "include": ["./lib/**/*"],
+  "exclude": ["@types/node"]
 }

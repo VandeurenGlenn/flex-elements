@@ -1,4 +1,4 @@
-import { LitElement } from "lit";
+import { LiteElement } from '@vandeurenglenn/lite';
 /**
  * @module @vandeurenglenn/flex-elements/display.js
  * @class FlexDisplay
@@ -26,16 +26,16 @@ import { LitElement } from "lit";
  *
  * `--flex-display-box-sizing` (border-box)
  */
-export declare class FlexDisplay extends LitElement {
-    padding: string;
-    minWidth: string;
-    maxWidth: string;
-    width: string;
-    direction: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-    center: boolean;
-    centerCenter: boolean;
-    justifyContent: string;
-    alignItems: string;
-    boxSizing: 'border-box' | 'content-box';
+export declare class FlexDisplay extends LiteElement {
+    accessor padding: string;
+    accessor minWidth: string;
+    accessor maxWidth: string;
+    accessor width: string;
+    accessor direction: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+    accessor center: boolean;
+    accessor centerCenter: boolean;
+    accessor justifyContent: string;
+    accessor alignItems: string;
+    accessor boxSizing: 'border-box' | 'content-box';
     render(): import("lit-html").TemplateResult<1>;
 }

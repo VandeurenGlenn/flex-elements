@@ -1,5 +1,5 @@
-import { CSSResultGroup, css, html } from "lit";
-import { FlexDisplay } from "./internal/display.js";
+import { CSSResultGroup, css, html } from 'lit';
+import { FlexDisplay } from './internal/display.js';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -12,14 +12,14 @@ export class FlexWrapCenter extends FlexDisplay {
     super();
   }
 
-  static styles?: CSSResultGroup = [
+  static styles = [
     css`
-    :host {
-      display: flex;
-      flex-flow: row wrap;
-      --flex-display-justify-content: center;
-    }
-    `
-  ]
+      :host {
+        display: flex;
+        flex-flow: row wrap;
+        --flex-display-justify-content: center;
+      }
+    `,
+  ];
 }
 customElements.define('flex-wrap-center', FlexWrapCenter);
