@@ -60,7 +60,7 @@
   },
   "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme",
   "dependencies": {
-    "@vandeurenglenn/lite": "^0.2.28",
+    "@vandeurenglenn/lite": "^0.2.36",
     "lit": "^3.0.1"
   },
   "devDependencies": {
