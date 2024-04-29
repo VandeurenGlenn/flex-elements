@@ -62,27 +62,36 @@ import { LiteElement, html, property } from '@vandeurenglenn/lite';
  */
 let FlexDisplay = (() => {
     let _classSuper = LiteElement;
-    let _instanceExtraInitializers = [];
     let _padding_decorators;
     let _padding_initializers = [];
+    let _padding_extraInitializers = [];
     let _minWidth_decorators;
     let _minWidth_initializers = [];
+    let _minWidth_extraInitializers = [];
     let _maxWidth_decorators;
     let _maxWidth_initializers = [];
+    let _maxWidth_extraInitializers = [];
     let _width_decorators;
     let _width_initializers = [];
+    let _width_extraInitializers = [];
     let _direction_decorators;
     let _direction_initializers = [];
+    let _direction_extraInitializers = [];
     let _center_decorators;
     let _center_initializers = [];
+    let _center_extraInitializers = [];
     let _centerCenter_decorators;
     let _centerCenter_initializers = [];
+    let _centerCenter_extraInitializers = [];
     let _justifyContent_decorators;
     let _justifyContent_initializers = [];
+    let _justifyContent_extraInitializers = [];
     let _alignItems_decorators;
     let _alignItems_initializers = [];
+    let _alignItems_extraInitializers = [];
     let _boxSizing_decorators;
     let _boxSizing_initializers = [];
+    let _boxSizing_extraInitializers = [];
     return class FlexDisplay extends _classSuper {
         static {
             const _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(_classSuper[Symbol.metadata] ?? null) : void 0;
@@ -96,46 +105,46 @@ let FlexDisplay = (() => {
             _justifyContent_decorators = [property({ type: String })];
             _alignItems_decorators = [property({ type: String })];
             _boxSizing_decorators = [property({ type: String })];
-            __esDecorate(this, null, _padding_decorators, { kind: "accessor", name: "padding", static: false, private: false, access: { has: obj => "padding" in obj, get: obj => obj.padding, set: (obj, value) => { obj.padding = value; } }, metadata: _metadata }, _padding_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _minWidth_decorators, { kind: "accessor", name: "minWidth", static: false, private: false, access: { has: obj => "minWidth" in obj, get: obj => obj.minWidth, set: (obj, value) => { obj.minWidth = value; } }, metadata: _metadata }, _minWidth_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _maxWidth_decorators, { kind: "accessor", name: "maxWidth", static: false, private: false, access: { has: obj => "maxWidth" in obj, get: obj => obj.maxWidth, set: (obj, value) => { obj.maxWidth = value; } }, metadata: _metadata }, _maxWidth_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _width_decorators, { kind: "accessor", name: "width", static: false, private: false, access: { has: obj => "width" in obj, get: obj => obj.width, set: (obj, value) => { obj.width = value; } }, metadata: _metadata }, _width_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _direction_decorators, { kind: "accessor", name: "direction", static: false, private: false, access: { has: obj => "direction" in obj, get: obj => obj.direction, set: (obj, value) => { obj.direction = value; } }, metadata: _metadata }, _direction_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _center_decorators, { kind: "accessor", name: "center", static: false, private: false, access: { has: obj => "center" in obj, get: obj => obj.center, set: (obj, value) => { obj.center = value; } }, metadata: _metadata }, _center_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _centerCenter_decorators, { kind: "accessor", name: "centerCenter", static: false, private: false, access: { has: obj => "centerCenter" in obj, get: obj => obj.centerCenter, set: (obj, value) => { obj.centerCenter = value; } }, metadata: _metadata }, _centerCenter_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _justifyContent_decorators, { kind: "accessor", name: "justifyContent", static: false, private: false, access: { has: obj => "justifyContent" in obj, get: obj => obj.justifyContent, set: (obj, value) => { obj.justifyContent = value; } }, metadata: _metadata }, _justifyContent_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _alignItems_decorators, { kind: "accessor", name: "alignItems", static: false, private: false, access: { has: obj => "alignItems" in obj, get: obj => obj.alignItems, set: (obj, value) => { obj.alignItems = value; } }, metadata: _metadata }, _alignItems_initializers, _instanceExtraInitializers);
-            __esDecorate(this, null, _boxSizing_decorators, { kind: "accessor", name: "boxSizing", static: false, private: false, access: { has: obj => "boxSizing" in obj, get: obj => obj.boxSizing, set: (obj, value) => { obj.boxSizing = value; } }, metadata: _metadata }, _boxSizing_initializers, _instanceExtraInitializers);
+            __esDecorate(this, null, _padding_decorators, { kind: "accessor", name: "padding", static: false, private: false, access: { has: obj => "padding" in obj, get: obj => obj.padding, set: (obj, value) => { obj.padding = value; } }, metadata: _metadata }, _padding_initializers, _padding_extraInitializers);
+            __esDecorate(this, null, _minWidth_decorators, { kind: "accessor", name: "minWidth", static: false, private: false, access: { has: obj => "minWidth" in obj, get: obj => obj.minWidth, set: (obj, value) => { obj.minWidth = value; } }, metadata: _metadata }, _minWidth_initializers, _minWidth_extraInitializers);
+            __esDecorate(this, null, _maxWidth_decorators, { kind: "accessor", name: "maxWidth", static: false, private: false, access: { has: obj => "maxWidth" in obj, get: obj => obj.maxWidth, set: (obj, value) => { obj.maxWidth = value; } }, metadata: _metadata }, _maxWidth_initializers, _maxWidth_extraInitializers);
+            __esDecorate(this, null, _width_decorators, { kind: "accessor", name: "width", static: false, private: false, access: { has: obj => "width" in obj, get: obj => obj.width, set: (obj, value) => { obj.width = value; } }, metadata: _metadata }, _width_initializers, _width_extraInitializers);
+            __esDecorate(this, null, _direction_decorators, { kind: "accessor", name: "direction", static: false, private: false, access: { has: obj => "direction" in obj, get: obj => obj.direction, set: (obj, value) => { obj.direction = value; } }, metadata: _metadata }, _direction_initializers, _direction_extraInitializers);
+            __esDecorate(this, null, _center_decorators, { kind: "accessor", name: "center", static: false, private: false, access: { has: obj => "center" in obj, get: obj => obj.center, set: (obj, value) => { obj.center = value; } }, metadata: _metadata }, _center_initializers, _center_extraInitializers);
+            __esDecorate(this, null, _centerCenter_decorators, { kind: "accessor", name: "centerCenter", static: false, private: false, access: { has: obj => "centerCenter" in obj, get: obj => obj.centerCenter, set: (obj, value) => { obj.centerCenter = value; } }, metadata: _metadata }, _centerCenter_initializers, _centerCenter_extraInitializers);
+            __esDecorate(this, null, _justifyContent_decorators, { kind: "accessor", name: "justifyContent", static: false, private: false, access: { has: obj => "justifyContent" in obj, get: obj => obj.justifyContent, set: (obj, value) => { obj.justifyContent = value; } }, metadata: _metadata }, _justifyContent_initializers, _justifyContent_extraInitializers);
+            __esDecorate(this, null, _alignItems_decorators, { kind: "accessor", name: "alignItems", static: false, private: false, access: { has: obj => "alignItems" in obj, get: obj => obj.alignItems, set: (obj, value) => { obj.alignItems = value; } }, metadata: _metadata }, _alignItems_initializers, _alignItems_extraInitializers);
+            __esDecorate(this, null, _boxSizing_decorators, { kind: "accessor", name: "boxSizing", static: false, private: false, access: { has: obj => "boxSizing" in obj, get: obj => obj.boxSizing, set: (obj, value) => { obj.boxSizing = value; } }, metadata: _metadata }, _boxSizing_initializers, _boxSizing_extraInitializers);
             if (_metadata) Object.defineProperty(this, Symbol.metadata, { enumerable: true, configurable: true, writable: true, value: _metadata });
         }
-        #padding_accessor_storage = (__runInitializers(this, _instanceExtraInitializers), __runInitializers(this, _padding_initializers, '0'));
+        #padding_accessor_storage = __runInitializers(this, _padding_initializers, '0');
         get padding() { return this.#padding_accessor_storage; }
         set padding(value) { this.#padding_accessor_storage = value; }
-        #minWidth_accessor_storage = __runInitializers(this, _minWidth_initializers, 'auto');
+        #minWidth_accessor_storage = (__runInitializers(this, _padding_extraInitializers), __runInitializers(this, _minWidth_initializers, 'auto'));
         get minWidth() { return this.#minWidth_accessor_storage; }
         set minWidth(value) { this.#minWidth_accessor_storage = value; }
-        #maxWidth_accessor_storage = __runInitializers(this, _maxWidth_initializers, 'auto');
+        #maxWidth_accessor_storage = (__runInitializers(this, _minWidth_extraInitializers), __runInitializers(this, _maxWidth_initializers, 'auto'));
         get maxWidth() { return this.#maxWidth_accessor_storage; }
         set maxWidth(value) { this.#maxWidth_accessor_storage = value; }
-        #width_accessor_storage = __runInitializers(this, _width_initializers, '100%');
+        #width_accessor_storage = (__runInitializers(this, _maxWidth_extraInitializers), __runInitializers(this, _width_initializers, '100%'));
         get width() { return this.#width_accessor_storage; }
         set width(value) { this.#width_accessor_storage = value; }
-        #direction_accessor_storage = __runInitializers(this, _direction_initializers, 'row');
+        #direction_accessor_storage = (__runInitializers(this, _width_extraInitializers), __runInitializers(this, _direction_initializers, 'row'));
         get direction() { return this.#direction_accessor_storage; }
         set direction(value) { this.#direction_accessor_storage = value; }
-        #center_accessor_storage = __runInitializers(this, _center_initializers, void 0);
+        #center_accessor_storage = (__runInitializers(this, _direction_extraInitializers), __runInitializers(this, _center_initializers, void 0));
         get center() { return this.#center_accessor_storage; }
         set center(value) { this.#center_accessor_storage = value; }
-        #centerCenter_accessor_storage = __runInitializers(this, _centerCenter_initializers, void 0);
+        #centerCenter_accessor_storage = (__runInitializers(this, _center_extraInitializers), __runInitializers(this, _centerCenter_initializers, void 0));
         get centerCenter() { return this.#centerCenter_accessor_storage; }
         set centerCenter(value) { this.#centerCenter_accessor_storage = value; }
-        #justifyContent_accessor_storage = __runInitializers(this, _justifyContent_initializers, 'flex-start');
+        #justifyContent_accessor_storage = (__runInitializers(this, _centerCenter_extraInitializers), __runInitializers(this, _justifyContent_initializers, 'flex-start'));
         get justifyContent() { return this.#justifyContent_accessor_storage; }
         set justifyContent(value) { this.#justifyContent_accessor_storage = value; }
-        #alignItems_accessor_storage = __runInitializers(this, _alignItems_initializers, 'flex-start');
+        #alignItems_accessor_storage = (__runInitializers(this, _justifyContent_extraInitializers), __runInitializers(this, _alignItems_initializers, 'flex-start'));
         get alignItems() { return this.#alignItems_accessor_storage; }
         set alignItems(value) { this.#alignItems_accessor_storage = value; }
-        #boxSizing_accessor_storage = __runInitializers(this, _boxSizing_initializers, 'border-box');
+        #boxSizing_accessor_storage = (__runInitializers(this, _alignItems_extraInitializers), __runInitializers(this, _boxSizing_initializers, 'border-box'));
         get boxSizing() { return this.#boxSizing_accessor_storage; }
         set boxSizing(value) { this.#boxSizing_accessor_storage = value; }
         render() {
@@ -167,6 +176,10 @@ let FlexDisplay = (() => {
       </style>
       <slot></slot>
     `;
+        }
+        constructor() {
+            super(...arguments);
+            __runInitializers(this, _boxSizing_extraInitializers);
         }
     };
 })();

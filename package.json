@@ -28,6 +28,11 @@
       "browser": "./exports/row.js",
       "types": "./exports/row.d.ts"
     },
+    "./wrap.js": {
+      "import": "./lib/wrap.js",
+      "browser": "./exports/wrap.js",
+      "types": "./exports/wrap.d.ts"
+    },
     "./wrap-around.js": {
       "import": "./lib/wrap-around.js",
       "browser": "./exports/wrap-around.js",
