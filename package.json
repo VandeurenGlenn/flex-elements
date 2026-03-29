@@ -4,48 +4,37 @@
   "description": "",
   "exports": {
     "./container.js": {
-      "import": "./exports/container.js",
-      "types": "./exports/container.d.ts"
+      "import": "./lib/container.js"
     },
     "./display.js": {
-      "import": "./exports/display.js",
-      "types": "./exports/display.d.ts"
+      "import": "./lib/internal/display.js"
     },
     "./it.js": {
-      "import": "./exports/it.js",
-      "types": "./exports/it.d.ts"
+      "import": "./lib/it.js"
     },
     "./column.js": {
-      "import": "./exports/column.js",
-      "types": "./exports/column.d.ts"
+      "import": "./lib/column.js"
     },
     "./row.js": {
-      "import": "./exports/row.js",
-      "types": "./exports/row.d.ts"
+      "import": "./lib/row.js"
     },
     "./wrap.js": {
-      "import": "./exports/wrap.js",
-      "types": "./exports/wrap.d.ts"
+      "import": "./lib/wrap.js"
     },
     "./wrap-around.js": {
-      "import": "./exports/wrap-around.js",
-      "types": "./exports/wrap-around.d.ts"
+      "import": "./lib/wrap-around.js"
     },
     "./wrap-between.js": {
-      "import": "./exports/wrap-between.js",
-      "types": "./exports/wrap-between.d.ts"
+      "import": "./lib/wrap-between.js"
     },
     "./wrap-center.js": {
-      "import": "./exports/wrap-center.js",
-      "types": "./exports/wrap-center.d.ts"
+      "import": "./lib/wrap-center.js"
     },
     "./wrap-evenly.js": {
-      "import": "./exports/wrap-evenly.js",
-      "types": "./exports/wrap-evenly.d.ts"
+      "import": "./lib/wrap-evenly.js"
     }
   },
   "files": [
-    "exports",
     "lib"
   ],
   "type": "module",
@@ -65,10 +54,6 @@
   },
   "homepage": "https://github.com/VandeurenGlenn/flex-elements#readme",
   "dependencies": {
-    "@vandeurenglenn/lite": "^0.2.46",
-    "lit": "^3.1.3"
-  },
-  "devDependencies": {
-    "typescript": "^5.4.5"
+    "@vandeurenglenn/lite": "^1.0.2"
   }
 }
