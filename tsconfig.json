@@ -4,10 +4,10 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./exports",
-    "rootDir": "lib",
+    "rootDir": "src",
     "declaration": true,
     "emitDeclarationOnly": true
   },
-  "include": ["./lib/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["@types/node"]
 }

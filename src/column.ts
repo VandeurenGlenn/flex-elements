@@ -1,9 +1,4 @@
 import { FlexDisplay } from "./internal/display.js";
-declare global {
-  interface HTMLElementTagNameMap {
-    'flex-column': FlexColumn;
-  }
-}
 
 /**
  * @module `@vandeurenglenn/flex-elements/column.js`
@@ -27,8 +22,8 @@ declare global {
 export class FlexColumn extends FlexDisplay {
   constructor() {
     super();
-    this.direction = 'column'
+    this.direction = "column";
   }
 }
 
-customElements.define('flex-column', FlexColumn)
+customElements.define("flex-column", FlexColumn);
